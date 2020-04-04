@@ -63,6 +63,29 @@ namespace DevAssignment.Controllers
             }
        }
 
+
+        /// <summary>
+        ///  Procedure called to execute search agains Items in model.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public BarefootProximityModel ExecuteSearch (BarefootProximityModel model)
+        {
+            // Does the model Search Criteria contain a value?
+            if (!string.IsNullOrEmpty(model.SearchCriteria))
+            {
+                // Yes - Retrieve the Items that contain the Search Criteria.
+                //  Items will be returned regardless of case
+                model.SearchResults = model.Items.Where(i => i.ToLower().Contains(model.SearchCriteria.ToLower())).ToList();
+            }
+
+            return model;
+        }
+        /// <summary>
+        /// Procedure call from Search page to execute search.
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
        public ActionResult Search(BarefootProximityModel model)
         {
             // Re-initialize Search Results.
@@ -76,13 +99,7 @@ namespace DevAssignment.Controllers
 
             }
 
-            // Does the model Search Criteria contain a value?
-            if (!string.IsNullOrEmpty(model.SearchCriteria))
-            {
-                // Yes - Retrieve the Items that contain the Search Criteria.
-                //  Items will be returned regardless of case
-                model.SearchResults = model.Items.Where(i => i.ToLower().Contains(model.SearchCriteria.ToLower())).ToList();
-            }
+            model = ExecuteSearch(model);
 
             // Open the Search with the updated model.
             return View("/Views/BarefootProximity/Search.cshtml", model);
