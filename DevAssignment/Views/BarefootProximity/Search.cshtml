@@ -1,0 +1,59 @@
+﻿@using DevAssignment.Models
+@model BarefootProximityModel
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Strings to Search</h2>
+@{ int cntItems = 0; }
+@foreach (string item in Model.Items)
+{
+    cntItems++;
+    @Html.Raw(item);
+    if (Model.Items.Count > cntItems)
+    {
+        @Html.Raw(", ")
+    }
+}
+<h2>Search</h2>
+@using (Html.BeginForm("Search", "BarefootProximity", FormMethod.Post, new { id = "searchCriteria", @class = "text-left" }))
+{
+    <fieldset>
+        <div class="Group">
+            <div class="required-field form-group has-feedback" id="searchCriteria">
+                @Html.LabelFor(m => m.SearchCriteria, new { @class = "control-label" })
+                @Html.TextBoxFor(m => m.SearchCriteria, new { @class = "halfAvailableWidth form-control text-box single-line", @id = "txtSearchCriteria", @type = "text" })
+                @Html.ValidationMessageFor(m => m.SearchCriteria, "", new { @class = "ErrorMessage" })
+            </div>
+        </div>
+
+        <div class="Group">
+            <div class="submit-buttons">
+                <div class="form-submit-border text-left">
+                    <input class="btn btn-lg barefoot-proximity-submit" id="login-button" name="action" type="submit" value="Search" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+}
+
+<h2>Search Results</h2>
+@if (0 < Model.SearchResults.Count)
+{
+    int cntResults = 0;
+    foreach (string result in Model.SearchResults)
+    {
+        cntResults++;
+        @Html.Raw(result);
+        if (Model.SearchResults.Count > cntResults)
+        {
+            @Html.Raw(", ")
+        }
+    }
+
+    }
+    else
+    {
+    @Html.Raw("<h5>No Search Results Found.<h5>")
+}

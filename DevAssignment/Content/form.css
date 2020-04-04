@@ -1,0 +1,265 @@
+﻿/* SITECORE FORM */
+.scfEmailGeneralPanel, .scfMultipleLineGeneralPanel, .scfSingleLineGeneralPanel, .scfPasswordGeneralPanel,
+.scfNumberGeneralPanel, .scfDatePickerGeneralPanel, .scfDateGeneralPanel, .scfRadioButtonListGeneralPanel,
+.scfCheckBoxListGeneralPanel, .scfFileUploadGeneralPanel, .scfDateSelectorGeneralPanel,
+.scfConfirmPasswordGeneralPanel, .scfCreditCardGeneralPanel, .scfTelephoneGeneralPanel,
+.scfSmsTelephoneGeneralPanel, .scfListBoxGeneralPanel, .scfDropListGeneralPanel {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+}
+
+.scfDropListLabel, .scfEmailLabel, .scfMultipleLineTextLabel, .scfSingleLineTextLabel, .scfPasswordLabel,
+.scfNumberLabel, .scfDatePickerLabel, .scfDateLabel, .scfRadioButtonListLabel, .scfCheckBoxListLabel,
+.scfListBoxLabel, .scfFileUploadLabel, .scfDateSelectorLabel, .scfCreditCardLabel, .scfConfirmPasswordLabel,
+.scfCaptchaLabel, .scfTelephoneLabel, .scfSmsTelephoneLabel {
+    width: auto !important;
+}
+
+.scfEmailGeneralPanel, .scfMultipleLineGeneralPanel, .scfSingleLineGeneralPanel, .scfPasswordGeneralPanel,
+.scfNumberGeneralPanel, .scfDatePickerGeneralPanel, .scfDateGeneralPanel, .scfRadioButtonListGeneralPanel,
+.scfCheckBoxListGeneralPanel, .scfFileUploadGeneralPanel, .scfDateSelectorGeneralPanel, .scfCreditCardGeneralPanel,
+.scfConfirmPasswordGeneralPanel, .scfCaptchaGeneralPanel, .scfTelephoneGeneralPanel, .scfSmsTelephoneGeneralPanel {
+    padding: 0px !important;
+}
+
+.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success 
+.radio-inline, .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, 
+.has-success.radio-inline label, .has-success.checkbox-inline label, .has-success .form-control {
+    border-color: #00427a !important;
+    color: #00427a !important;
+}
+
+.halfAvailableWidth {
+    float: none !important;
+    display: inline !important;
+    width: 100% !important;
+}
+
+.scfForm input, .scfForm select {
+    height: 35px !important;
+}
+
+.scfEmailLabel {
+    display: inline !important;
+}
+
+.scfEmailBorder .scfRequired {
+    float: none !important;
+    vertical-align: top !important;
+    position: relative !important;
+}
+
+.scfSubmitButton {
+    width: 133px !important;
+    height: 38px !important;
+    color: #5f5f5f;
+    background-color: #dcdcdc;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #5f5f5f;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Univers LT W01 45 Light";
+    font-size: 22px !important;
+}
+
+.scfError, .scfValidationSummary, .scfValidatorRequired, .scfValidator {
+    font-size: 16px !important;
+}
+
+label,
+.scfDateSelectorLabel {
+    display: block;
+}
+
+.scfDateSelectorGeneralPanel select {
+    border: 1px solid #00427a;
+    font-size: 16px;
+    color: #00427a;
+}
+
+.scfDateSelectorGeneralPanel select option {
+    color: #00427a;
+    font-size: 16px;
+}
+
+.scfDateSelectorGeneralPanel .scfDateSelectorShortLabelDay,
+.scfDateSelectorGeneralPanel .scfDateSelectorShortLabelMonth,
+.scfDateSelectorGeneralPanel .scfDateSelectorShortLabelYear {
+    color: #00427a;
+    text-align: center;
+}
+
+
+
+.scfCaptchaGeneralPanel table {
+    margin-top: 10px !important;
+}
+
+.scfCaptchaLimitGeneralPanel {
+    max-width: 215px;
+    width: 100%;
+}
+
+.scfCaptchaLimitGeneralPanel input {
+    padding: 5px;
+}
+
+.scfCaptchaLimitGeneralPanel td {
+    vertical-align: top;
+}
+
+.scfCaptchaLimitGeneralPanel td input {
+    border: none;
+    width: auto;
+    height: auto !important;
+    margin: 0px !important;
+}
+
+.scfSectionBorderAsFieldSet {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+div.scfCaptchaLimitGeneralPanel table td {
+    border: none !important;
+    padding: 10px 0px !important;
+}
+
+/* Info Text - in form header */
+.info-text {
+    background-color: #ae75b2;
+    text-align: center;
+    padding: 10px;
+    font-family: "Univers LT W01 65 Bold";
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.info-text a.number {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Controls General */
+.form-control {
+    border-radius: 0;
+}
+
+.scfShortText,
+.scfValidationSummary,
+.scfRequired,
+.scfCaptchaLabel,
+.wffm-hidden-field-label label.control-label,
+span.field-validation-valid,
+.input-group-addon, .input-group-addon:first-child {
+    display: none !important;
+}
+
+/* Date Picker Controls Specific */
+.wffm-barefoot-proximity-date {
+    max-width: 345px;
+}
+
+.wffm-barefoot-proximity-date .row, .scfDateSelectorBorder .row, .thirdAvailableWidth .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.input-group:first-child {
+    padding-right: 0;
+}
+
+.input-group .form-control:last-child {
+    border-radius: 0;
+}
+
+.wffm-barefoot-proximity-date .row .col-xs-4, .wffm-barefoot-proximity-date .row .col-sm-4,
+.wffm-barefoot-proximity-date .row .col-md-4, .wffm-barefoot-proximity-date .row .col-lg-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wffm-barefoot-proximity-date .row .form-control {
+    padding-right: 35px;
+}
+
+.wffm-barefoot-proximity-date .row .col-xs-4.col-sm-4.wffm-barefoot-proximity-month::before {
+    content: "Month";
+}
+
+.wffm-barefoot-proximity-date .row .col-xs-4.col-sm-4.wffm-barefoot-proximity-day::before {
+    content: "Day";
+}
+
+.wffm-barefoot-proximity-date .row .col-xs-4.col-sm-4.wffm-barefoot-proximity-year::before {
+    content: "Year";
+}
+
+.wffm-barefoot-proximity-date .row .col-xs-4.col-sm-4::before {
+    text-align: center;
+    display: block;
+    color: #00427a;
+    font-size: 14px;
+}
+
+/* Checkbox List */
+div.form-group div.checkbox table tbody tr td {
+    padding-right: 40px;
+}
+
+/* Radio List */
+div.form-group div.radio table tbody tr td {
+    padding-right: 40px;
+}
+
+label,
+.scfDateSelectorLabel,
+.btn-lg,
+.barefoot-proximity-submit {
+    color: #00427a;
+    font-family: "Univers LT W01 45 Light";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.halfSection {
+    width: 50%;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.form-submit-border input {
+    max-width: 150px;
+    margin-top: 15px;
+}
+
+form .thirdAvailableWidth {
+    width: 33.3%;
+    padding-right: 10px;
+}
+
+form .thirdAvailableWidth:nth-of-type(4),
+form .halfSection:nth-of-type(6) {
+    padding: 0px;
+}
+
+img.site-section-image {
+    margin-bottom: 20px;
+}
+
+/* --- MOBILE --- */
+@media(max-width : 767px) {
+    form .thirdAvailableWidth,
+    form .halfSection {
+        float: none;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+}
