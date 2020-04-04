@@ -11,8 +11,7 @@ namespace DevAssignment.Controllers
     {
         public ActionResult Index()
         {
-            BarefootProximityModel model = new Models.BarefootProximityModel();
-            return View(model);
+            return View(new BarefootProximityModel());
         }
 
         public ActionResult About()
@@ -27,6 +26,13 @@ namespace DevAssignment.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Search()
+        {
+            ViewBag.Message = "Search";
+
+            return View("/Views/BarefootProximity/Search.cshtml", new BarefootProximityModel());
         }
     }
 }
