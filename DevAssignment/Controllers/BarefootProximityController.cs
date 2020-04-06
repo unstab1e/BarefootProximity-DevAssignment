@@ -59,7 +59,7 @@ namespace DevAssignment.Controllers
             else
             {
                 // No - Remain on index page.
-                return View("/");
+                return View("/Views/Home/Index.cshtml", model);
             }
        }
 
